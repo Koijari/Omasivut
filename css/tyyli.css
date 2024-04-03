@@ -1,0 +1,316 @@
+/*yleissäädöt*/
+
+:root {
+    --o_tausta: #226622;
+    --hover_tausta: #448844;
+    --o_fontti: #cfcfcf;
+    --b_tausta: #22662230;
+    --e_fontti: #55aa55;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background-color: var(--b_tausta);
+}
+
+/* yleiskäyttöiset*/
+
+.koro {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sentteri {
+    max-width: 100%;
+    width: 20%;
+    margin: 0 auto;
+}
+
+
+/*otsikkojutut*/
+
+header {
+    position: fixed;
+    background-color: var(--o_tausta);
+    color: var(--o_fontti);
+    height: 3em;
+    font-size: 1.7em;
+    max-width: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--o_fontti);
+    background-color: var(--o_tausta);
+    border: 1px solid var(--e_fontti);
+    margin: 0 10px;
+    padding: 2px 4px;
+    border-radius: 8px;
+}
+
+header a:hover {
+    background-color: var(--hover_tausta);
+}
+nav {
+    position: relative;
+    max-width: 90%;
+    left: 50%;
+    transform: translateX(80%);
+}
+
+/*pääohjelma*/
+
+main {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0 auto;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto
+}
+
+section p {
+    width: 80%;
+}
+
+section img {
+    float: right;
+    margin: 30px 10px;
+}
+
+div img {
+    min-width: 150px;
+    max-width: 280px;
+}
+
+table {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.intro {
+    padding-top: 80px;
+}
+
+
+.rolleri {
+    max-width: 100%;
+    width: 40%;
+    background-color: var(--o_tausta);
+    overflow: auto;
+    white-space: nowrap;
+    padding: 5px;
+    margin: 10px auto;
+  }
+
+
+/*jalkapedaalit*/
+footer {
+    padding: 10px;
+    color: var(--o_fontti);
+    background-color: var(--o_tausta);
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 5px;
+    background-color: var(--o_tausta);
+    color: var(--o_fontti);
+    border: 1px solid var(--o_fontti);
+    border-radius: 4px;
+}
+
+footer a:hover {
+    background-color: var(--hover_tausta);
+}
+
+/* CVn omat*/
+
+#cv_otsikko {
+    padding-top: 100px;
+    background-color: #22662250;
+    color: var(--o_fontti);
+    font-size: 2.1em;
+    max-width: 100%;
+    width: 100%;
+    height: 400px;
+}
+
+.cv_main {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.cv_kuva {
+    height: 250px;
+    margin-left: 20%;
+}
+
+#plokki {
+    line-height: 1.1em;
+    float: right;
+    width: 55%;
+}
+
+#gr {
+    position: absolute;
+    top: 350px;
+    font-size: 0.6em;    
+}
+
+#vari {
+    color: var(--e_fontti);
+}
+
+#rolleri {
+    position: relative;
+    max-width: 100%;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.roll {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+    border-style: none;
+}
+
+tr, td {
+    width: 15rem;
+    text-align: center;
+    border: 1px solid var(--o_tausta);
+}
+
+/* animaatiot*/
+#kuva {    
+    position: relative;
+    opacity: 0;
+    animation: kuva 5s forwards;
+}
+#nimi {
+    position: relative;
+    color: var(--o_fontti);
+    opacity: 0;
+    animation: nimi 4s forwards;
+}
+
+@keyframes kuva {
+    from {top: 0;}
+    to {top: 0; opacity: 1;}
+}
+@keyframes nimi {
+    from {top: 0;}
+    to {top: 0; opacity: 1; color: var(--e_fontti);}
+}
+
+/*Respot*/
+@media only screen and (max-width: 900px) {
+    body {
+        clear: both;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+    .sentteri {
+        margin: 0 auto;
+    }
+    #cv_otsikko {
+        font-size: 1.8em
+    }
+    .cv_kuva {
+        margin-left: 12%;
+    }
+    .cv_main {
+        max-width: 100%;
+        width: 80%;
+    }
+    header {
+        font-size: 1.2em;
+    }
+    nav {
+        font-size: 0.9em;
+        left: 50%;
+        transform: translateX(100%);
+    }
+    div img {
+        max-width: 220px;
+    }
+    #plokki {
+        max-width: 100%
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    body {
+        line-height: 1em;
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+    }
+    header a {
+        margin: 0 2px;
+    }
+    section {
+        display: block;
+    }
+    section img {
+        display: block;
+        max-width: 100%;
+        min-width: 180px;
+        width: 65%;
+        height: auto;
+        margin: 0 15%;
+    }
+    .intro {
+        padding-top: 60px;
+    }
+    #cv_otsikko {
+        max-width: 100%;
+        width: 100%;
+        height: 660px;
+    }
+    .cv_kuva {
+        display: block;
+        max-width: 220px;
+        margin: 0 auto;
+    }
+    .cv_main {
+        max-width: 100%;
+        width: 98%;
+    }
+    #plokki {
+        display: block;
+        max-width: 100%;
+        width: 98%;
+        text-align: center;
+    }
+    #gr {
+        top: 630px;
+        max-width: 100%;
+    }
+    nav {
+        font-size: 0.7em;
+        left: 20%;
+        margin: 0 auto;
+    }
+    main p {
+        max-width: 100%;
+        width: 98%;
+    }    
+}

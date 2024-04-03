@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="css/tyyli.css">
+    <script src="js/cv.js"></script>
+</head>
+<body>
+    <header>
+        <div>CV</div>
+        <nav class="koro">
+            <a href="index.html">Frontpage</a>
+            <a href="harrastus.html">Hobbies</a>
+            <a href="#">Status</a>            
+        </nav>
+    </header>
+
+    <main>
+        
+        <div id="cv_otsikko">            
+            <img id="kuva" src="/kuvat/Ite.jpg" class="cv_kuva" alt="Janne Kolari">            
+            <div id="plokki">
+                <h3 id="nimi"><b>Janne Kolari</b></h3>
+                <h4><i>Software Developer student</i></h4>
+                <span id="gr">from <b id="vari">ESEDU</b></span>
+            </div>
+        </div>
+
+        <hr>
+        <article class="cv_main">
+            <section>
+                <h3><u>Working experience</u></h3>
+                <ul>
+                    <li><b>P</b>roduction worker, Järvi-Suomen Portti Osk/HKScan Oyj Mikkeli 1992-2018</li>
+                    <li><b>K</b>eyUser in HKScan Oyj Mikkeli - SAP/ERP 2018</li>
+                    <li><b>S</b>ystem KeyUser in HKScan Oyj Mikkeli - SAP/ERP/MES 2019-2022</li>
+                    <li><b>O</b>utbound logistics employee in HKScan Oyj Mikkeli - 2022-2023</li>
+                    <li><b>I</b>nformation and communication technology student since 9/2023</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3><u>Studies</u></h3>
+                <table>
+                    <tr><th>Language</th><th>Experience</th></tr>
+                    <tr><td>Python</td><td>1<i>st </i>year student</td></tr>
+                    <tr><td>HTML</td><td>1<i>st </i>year student</td></tr>
+                    <tr><td>CSS</td><td>1<i>st </i>year student</td></tr>
+                    <tr><td>MicroPython</td><td>Hobbyist</td></tr>
+                </table>
+                <div id="rolleri sentteri">                    
+                    <button onclick="seuraava()">
+                        <img id="esitys" src="/kuvat/Solo_Tech.png" class="roll" alt="tech">
+                    </button>
+                </div>
+            </section>
+        </article>
+
+        <br>
+    </main>
+
+    <footer>
+        <h5>Copyright &copy; JMK</h5>
+        <div>
+            <span>Janne Kolari</span>
+            <a href="mailto:janne.kolari@esedulainen.fi">EMail</a>
+        </div>
+    </footer>
+    
+</body>
+</html>
