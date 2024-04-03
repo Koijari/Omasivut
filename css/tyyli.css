@@ -254,6 +254,10 @@ tr, td {
     #plokki {
         max-width: 100%
     }
+    .rolleri {
+        max-width: 40%;
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -312,5 +316,9 @@ tr, td {
     main p {
         max-width: 100%;
         width: 98%;
-    }    
+    }
+    .rolleri {
+        max-width: 70%;
+        width: 100%;
+    }
 }
